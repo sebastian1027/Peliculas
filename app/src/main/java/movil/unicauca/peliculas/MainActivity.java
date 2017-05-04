@@ -15,12 +15,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this, R.layout.activity_main);
+        binding.setHandler(this);
     }
 
     public void goToNext(){
-     //String usr = binding.usuario.getEditText().getText().toString();
-     // String pass = binding.pass.getEditText().getText().toString();
         Intent intent = new Intent(this, MoviesActivity.class);
         startActivity(intent); //material design II
+    }
+
+    public void goToRegister(){
+        Intent intent1 = new Intent(this, RegistroActivity.class);
+        startActivity(intent1);
     }
 }
