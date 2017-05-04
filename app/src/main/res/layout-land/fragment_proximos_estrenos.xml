@@ -119,7 +119,9 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:text="@{proximosestrenos.namepe}"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/red"
+                    app:fontTtf='@{"kunstler"}'
                     app:layout_constraintBottom_toBottomOf="@+id/maskpe"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"

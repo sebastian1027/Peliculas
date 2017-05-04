@@ -13,4 +13,7 @@
     <string name="duration">Duración</string>
     <string name="namenextrelease">Nombre Próximo Estreno</string>
     <string name="datereleasepremier">Fecha de Estreno</string>
+    <string name="namemovie">Nombre Pelicula</string>
+    <string name="gender">Genero</string>
+    <string name="pitufos">los pitufos</string>
 </resources>

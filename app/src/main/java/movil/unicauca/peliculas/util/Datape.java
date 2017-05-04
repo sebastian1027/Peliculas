@@ -22,6 +22,7 @@ public class Datape {
             pe1.setDateofpremier("8 de mayo de 2017");
             pe1.setImagepe("https://i.ytimg.com/vi/JkHGQ1IewOU/maxresdefault.jpg");
             pe1.setDurationpe("120 minutos");
+            //para el boton mirar video de databinding 1 en el 58:00 del 2016
 
             ProximosEstrenos pe2 = new ProximosEstrenos();
             pe2.setNamepe("Alien: Covenant");

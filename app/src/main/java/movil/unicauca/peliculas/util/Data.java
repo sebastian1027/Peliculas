@@ -3,6 +3,7 @@ package movil.unicauca.peliculas.util;
 import java.util.ArrayList;
 import java.util.List;
 
+import movil.unicauca.peliculas.R;
 import movil.unicauca.peliculas.models.Estrenos;
 
 /**
@@ -42,7 +43,8 @@ public class Data {
              e4.setDuration("140 minutos");
 
              Estrenos e5 = new Estrenos();
-             e5.setName("los pitufos");
+             //e5.setName((.getString(R.string.pitufos));
+             e5.setName("Los pitufos");
              e5.setDate("mayo de 2017");
              e5.setImage("https://www.mujeresnegocios.com/wp-content/uploads/2017/04/2017-los-pitufos-la-aldea-escondida.jpg");
              e5.setDuration("130 minutos");
@@ -59,7 +61,6 @@ public class Data {
              data.add(e4);
              data.add(e5);
              data.add(e6);
-
 
          }
          return data;

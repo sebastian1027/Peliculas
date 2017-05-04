@@ -3,6 +3,7 @@ package movil.unicauca.peliculas;
 import android.app.Activity;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.renderscript.ScriptGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -25,5 +26,8 @@ public class RegistroActivity extends AppCompatActivity {
         Intent intent2 = new Intent(this, MainActivity.class);
         startActivity(intent2); //material design II
     }
+
+
+
 }
 

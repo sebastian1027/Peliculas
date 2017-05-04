@@ -1,6 +1,7 @@
 package movil.unicauca.peliculas.adapters;
 
 import android.databinding.DataBindingUtil;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,7 @@ import java.util.List;
 
 import movil.unicauca.peliculas.MoviesActivity;
 import movil.unicauca.peliculas.R;
-import movil.unicauca.peliculas.databinding.TemplateProximosEstrenosBinding;
+import movil.unicauca.peliculas.databinding.FragmentProximosEstrenosBinding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;
 
 /**
@@ -37,7 +38,7 @@ public class ProximoEstrenoAdapter extends RecyclerView.Adapter<ProximoEstrenoAd
 
     @Override
     public PEHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = inflater.inflate(R.layout.template_proximos_estrenos, parent, false);
+        View v = inflater.inflate(R.layout.fragment_proximos_estrenos, parent, false);
         return new PEHolder(v);
     }
 
@@ -64,7 +65,7 @@ public class ProximoEstrenoAdapter extends RecyclerView.Adapter<ProximoEstrenoAd
     //region ViewHolder
     static class PEHolder extends RecyclerView.ViewHolder{
 
-        TemplateProximosEstrenosBinding binding;
+        FragmentProximosEstrenosBinding binding;
 
         public PEHolder(View itemView) {
             super(itemView);
