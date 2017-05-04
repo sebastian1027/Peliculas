@@ -2,4 +2,5 @@
 <resources>
     <dimen name="estrenosimg">180dp</dimen>
     <dimen name="icon">25dp</dimen>
+    <dimen name="proximoestrenoimg">120dp</dimen>
 </resources>

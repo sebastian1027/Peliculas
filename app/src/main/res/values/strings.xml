@@ -11,4 +11,6 @@
     <string name="namepremier">Nombre Estreno</string>
     <string name="date">Fecha</string>
     <string name="duration">Duración</string>
+    <string name="namenextrelease">Nombre Próximo Estreno</string>
+    <string name="datereleasepremier">Fecha de Estreno</string>
 </resources>

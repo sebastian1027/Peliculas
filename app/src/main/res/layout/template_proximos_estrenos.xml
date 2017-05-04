@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
+
     <data>
-        <variable
-            name="handler"
-            type="movil.unicauca.peliculas.adapters.EstrenoAdapter"/>
 
         <variable
-            name="estrenos"
-            type="movil.unicauca.peliculas.models.Estrenos"/>
+            name="handler"
+            type="movil.unicauca.peliculas.adapters.ProximoEstrenoAdapter"/>
+
+        <variable
+            name="proximosestrenos"
+            type="movil.unicauca.peliculas.models.ProximosEstrenos"/>
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -21,13 +21,12 @@
         android:onClick="@{(v)->handler.onClick(v)}"
         >
 
+
         <android.support.v7.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="253dp"
-            android:layout_marginEnd="8dp"
+            android:layout_width="302dp"
+            android:layout_height="264dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -38,17 +37,16 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="@{(v)->handler.onClick(v)}"
-                >
+                android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/img"
+                    android:id="@+id/imgpe"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/estrenosimg"
                     android:layout_marginLeft="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginTop="0dp"
+                    android:contentDescription=""
                     android:scaleType="centerCrop"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -56,46 +54,46 @@
                     app:srcCompat="@color/movieBg" />
 
                 <ImageView
-                    android:id="@+id/mask"
+                    android:id="@+id/maskpe"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/estrenosimg"
                     android:layout_marginLeft="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/mask"
-                    app:imgUrl="@{estrenos.image}"
+                    app:imgUrl="@{proximosestrenos.imagepe}"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textView10"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/icon"
-                    android:layout_marginBottom="14dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:text="@{estrenos.name}"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
-                    app:layout_constraintBottom_toBottomOf="@+id/mask"
-                    app:layout_constraintHorizontal_bias="0.046"
+                    android:text="@{proximosestrenos.namepe}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+                    app:layout_constraintBottom_toBottomOf="@+id/maskpe"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    tools:text="@string/namepremier"
-                    />
+                    tools:text="@string/namenextrelease" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:layout_width="@dimen/icon"
+                    android:layout_height="@dimen/icon"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/mask"
-                    app:srcCompat="@drawable/ic_today" />
+                    app:layout_constraintTop_toBottomOf="@+id/maskpe"
+                    app:srcCompat="@drawable/ic_today"
+                    tools:ignore="RtlHardcoded" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageView10"
                     android:layout_width="@dimen/icon"
                     android:layout_height="@dimen/icon"
                     android:layout_marginBottom="8dp"
@@ -103,34 +101,35 @@
                     android:layout_marginTop="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView9"
                     app:srcCompat="@drawable/ic_time" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="-1dp"
+                    android:layout_marginBottom="0dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:text="@{estrenos.duration}"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                    app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                    android:text="@{proximosestrenos.dateofpremier}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView9"
                     app:layout_constraintRight_toRightOf="parent"
-                    tools:text="@string/duration" />
+                    tools:text="@string/datereleasepremier" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView12"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="-1dp"
+                    android:layout_marginBottom="0dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:text="@{estrenos.date}"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-                    app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                    android:text="@{proximosestrenos.durationpe}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView10"
                     app:layout_constraintRight_toRightOf="parent"
-                    tools:text="@string/date" />
+                    tools:text="@string/duration" />
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 

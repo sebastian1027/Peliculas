@@ -3,7 +3,7 @@
     <color name="colorPrimary">#1565c0</color>
     <color name="colorPrimaryDark">#003c8f</color>
     <color name="colorAccent">#ffb300</color>
-    <color name="movieBg">#222</color>
+    <color name="movieBg">#222222</color>
     <color name="icon">#555</color>
 
 </resources>
