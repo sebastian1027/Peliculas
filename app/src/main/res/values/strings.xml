@@ -16,4 +16,12 @@
     <string name="namemovie">Nombre Pelicula</string>
     <string name="gender">Genero</string>
     <string name="pitufos">los pitufos</string>
+    <string name="movies">Peliculas</string>
+    <string name="calificarpeliculas">Calificar Películas</string>
+    <string name="remember">Recordatorios</string>
+    <string name="salir">Salir</string>
+    <string name="profile">Perfil</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="open">Abierto</string>
+    <string name="close">Cerrado</string>
 </resources>

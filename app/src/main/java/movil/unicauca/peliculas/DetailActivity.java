@@ -17,11 +17,6 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(binding.getRoot()); //min 42 primer video
 
         int pos = getIntent().getIntExtra(EXTRA_POS, 0);
-
         binding.setEstrenos(Data.getData().get(pos));
-
-
-
-
     }
 }
