@@ -24,4 +24,23 @@
     <string name="cerrarsesion">Cerrar Sesión</string>
     <string name="open">Abierto</string>
     <string name="close">Cerrado</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movieseleccion">Seleccione la Pélicula a Calificar</string>
+    <string name="comment">Comentarios</string>
+    <string name="sendcomment">Envia tus Comentarios sobre la Pelicula</string>
+    <string name="send">Enviar</string>
+    <string name="moviesstoremember">Peliculas a Recordar</string>
+    <string name="delete">Eliminar</string>
+
+    <string-array name="moviesestrenos">
+        <item>Rapidos y Furiosos</item>
+        <item>Un Jefe en Pañales</item>
+        <item>Día del Atentado</item>
+        <item>Nunca digas su Nombre</item>
+        <item>Los Pitufos</item>
+        <item>El Cielo Espera</item>
+    </string-array>
+
 </resources>

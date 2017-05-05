@@ -10,6 +10,6 @@ public class RecordatorioActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recordatorio);
+        setContentView(R.layout.fragment_recordatorio);
     }
 }
